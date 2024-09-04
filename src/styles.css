@@ -94,6 +94,7 @@ footer {
 
 .attribution a {
   font-weight: bold;
+  color: var(--black);
   cursor: pointer;
 }
 
