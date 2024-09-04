@@ -6,7 +6,7 @@ This is a solution to the **404 Not Found Page** project of the Make It Real cou
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshot)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -15,12 +15,9 @@ This is a solution to the **404 Not Found Page** project of the Make It Real cou
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-
 ## Overview
 
 ### The challenge
-
-Users should be able to:
 
 - Build the basic structure of the page with HTML.
 - Apply styles to the page using CSS following the layouts indicated in the "design" folder.
@@ -38,6 +35,40 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 
+### What I learned
+
+This project helped me especially to reinforce what I learned about responsive design following the mobile first approach.
+
+```html
+<body>
+  <header>
+    <h1>404 Not Found</h1>
+  </header>
+  <main></main>
+  <footer></footer>
+<body>
+```
+```css
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    display: flex;
+    flex: auto;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+  }
+}
+```
+
+### Continued development
+
+Working on this project made me realize that there are still advanced CSS topics to learn, and at the same time it sparked my interest to use Github Pages more often for static page deployment.
+
 ### Useful resources
 
 - [Quickstart for GitHub Pages](https://docs.github.com/en/pages/quickstart) - This is a guide to deploy static pages using the GitHub pages service, which allows you to easily publish your website online in a few steps.
@@ -45,3 +76,7 @@ Users should be able to:
 ## Author
 
 - Website - [Heberth López](https://www.heblopez.web.app)
+
+## Acknowledgments
+
+A special thanks to the MakeItReal team for the knowledge and support provided in each class and the feedback received on each project.
