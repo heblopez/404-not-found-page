@@ -1,8 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+--black: #333333;
+--gray2: #4F4F4F;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  font-family: 'Space Mono', monospace;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  color: var(--black);
+  padding: 1.5rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-family: monospace;
+  font-size: 24px;
+  letter-spacing: -4px;
+}
+
+main img {
+  width: 100%;
+  padding: 4rem 1rem;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.content h2 {
+  font-size: 44px;
+  width: 100%;
+}
+
+.content p {
+  color: var(--gray2);
+}
+
+button {
+  background-color: var(--black);
+  color: white;
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: bold;
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  border: none;
+  cursor: pointer;
+}
+
 .attribution {
-  font-size: 11px;
+  font-size: 12px;
   text-align: center;
+  color: var(--gray2);
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.attribution a:visited {
+  color: var(--black);
 }
