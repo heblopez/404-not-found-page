@@ -11,8 +11,12 @@
   padding: 0;
 }
 
-body {
+html, body {
   height: 100%;
+  margin: 0;
+}
+
+body {
   font-family: 'Space Mono', monospace;
   font-weight: 500;
   font-style: normal;
@@ -42,7 +46,7 @@ header h1 {
   letter-spacing: -4px;
 }
 
-main img {
+main .container-img {
   width: 100%;
   padding: 4rem 1rem;
 }
@@ -65,16 +69,21 @@ main img {
 }
 
 button {
+  width: fit-content;
   background-color: var(--black);
   color: white;
   text-transform: uppercase;
   font-size: small;
   font-weight: bold;
   padding: 1rem 3rem;
-  margin-top: 1rem;
-  margin-bottom: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
   border: none;
   cursor: pointer;
+}
+
+footer {
+  padding-bottom: 1.5rem;
 }
 
 .attribution {
@@ -90,4 +99,66 @@ button {
 
 .attribution a:visited {
   color: var(--black);
+}
+
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    display: flex;
+    flex: auto;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+  }
+
+  main .container-img {
+    width: 50%;
+  }
+
+  main .content {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  main .content button {
+    margin-bottom: 0;
+  }
+
+  .container-img img {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  footer {
+    margin-top: auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: 2rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  main {
+    gap: 4rem;
+  }
+
+  main .container-img {
+    padding: 0 1rem;
+  }
+
+  main .content h2 {
+    width: 450px;
+  }
+
+  main .content p {
+    width: 300px;
+  }
 }
